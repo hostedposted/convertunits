@@ -5,14 +5,14 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="convertunits",
-    version="1.0.0",
+    version="1.0.1",
     author="Hostedposted",
     author_email="hostedpostedsite@gmail.com",
     description="Convert units in python.",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/hostedposted/convertunits",
-    packages=setuptools.find_packages(),
+    packages=["convertunits"],
     classifiers=[
         "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: 3.7",
