@@ -6,7 +6,7 @@ class Plane_angle(Base):
         if not is_none(degree):
             self.degree = degree
             self.gradian = degree * 200/180
-            self.milliradian = degree * 1000*pi/180
+            self.milliradian = degree * 200/180
             self.minute_of_arc = degree * 60
             self.radian = degree * pi/180
             self.second_of_arc = degree * pi/180
@@ -15,7 +15,7 @@ class Plane_angle(Base):
             self.gradian = gradian
             self.milliradian = gradian * 1000*pi/200
             self.minute_of_arc = gradian * 54
-            self.radian = gradian * 54
+            self.radian = gradian * pi/200
             self.second_of_arc = gradian * 3240
         elif not is_none(milliradian):
             self.degree = milliradian * 180/1000*pi
@@ -35,14 +35,14 @@ class Plane_angle(Base):
             self.degree = radian * 180/pi
             self.gradian = radian * 200/pi
             self.milliradian = radian * 1000
-            self.minute_of_arc = radian * (60 * 180)/pi
+            self.minute_of_arc = radian * 1000
             self.radian = radian
             self.second_of_arc = radian * (3600 * 180)/pi
         elif not is_none(second_of_arc):
             self.degree = second_of_arc / 3600
             self.gradian = second_of_arc / 3240
             self.milliradian = second_of_arc * 1000*pi/(180 * 3600)
-            self.minute_of_arc = second_of_arc / 60
+            self.minute_of_arc = second_of_arc * 1000*pi/(180 * 3600)
             self.radian = second_of_arc * pi/(180 * 3600)
             self.second_of_arc = second_of_arc
         else:

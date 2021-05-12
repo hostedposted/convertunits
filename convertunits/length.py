@@ -36,7 +36,7 @@ class Length(Base):
             self.mile = centimeter / 160934
             self.yard = centimeter / 91.44
             self.foot = centimeter / 30.48
-            self.inch = centimeter / 30.48
+            self.inch = centimeter / 2.54
             self.nautical_mile = centimeter / 185200
         elif not is_none(millimeter):
             self.kilometer = millimeter / 1e+6
@@ -82,7 +82,7 @@ class Length(Base):
             self.micrometer = mile * 1.609e+9
             self.nanometer = mile * 1.609e+12
             self.mile = mile
-            self.yard = mile * 1.609e+12
+            self.yard = mile * 1760
             self.foot = mile * 5280
             self.inch = mile * 63360
             self.nautical_mile = mile / 1.151

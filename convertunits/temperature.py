@@ -5,13 +5,13 @@ class Temperature(Base):
         if not is_none(celsius):
             self.celsius = celsius
             self.fahrenheit = (32 * 9/5) + 32
-            self.kelvin = celsius + 273.15
+            self.kelvin = (32 * 9/5) + 32
         elif not is_none(fahrenheit):
             self.celsius = (fahrenheit - 32) * 5/9
             self.fahrenheit = fahrenheit
             self.kelvin = (fahrenheit - 32) * 5/9 + 273.15
         elif not is_none(kelvin):
-            self.celsius = kelvin - 273.15
+            self.celsius = (kelvin - 32) * 5/9 + 273.15
             self.fahrenheit = (kelvin - 273.15) * 9/5 + 32
             self.kelvin = kelvin
         else:

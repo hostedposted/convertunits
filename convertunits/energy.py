@@ -11,8 +11,8 @@ class Energy(Base):
             self.kilowatt_hour = joule / 3.6e+6
             self.electronvolt = joule * 6.242e+18
             self.british_thermal_unit = joule / 1055
-            self.us_therm = joule / 1055
-            self.foot_pound = joule / 1.055e+8
+            self.us_therm = joule / 1.055e+8
+            self.foot_pound = joule / 1.356
         elif not is_none(kilojoule):
             self.joule = kilojoule * 1000
             self.kilojoule = kilojoule
@@ -21,7 +21,7 @@ class Energy(Base):
             self.watt_hour = kilojoule / 3.6
             self.kilowatt_hour = kilojoule / 3600
             self.electronvolt = kilojoule * 9.223e+18
-            self.british_thermal_unit = kilojoule * 9.223e+18
+            self.british_thermal_unit = kilojoule / 1.055
             self.us_therm = kilojoule / 105480
             self.foot_pound = kilojoule * 738
         elif not is_none(gram_calorie):

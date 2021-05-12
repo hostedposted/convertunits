@@ -13,8 +13,8 @@ class Time(Base):
             self.week = nanosecond / 6.048e+14
             self.month = nanosecond / 2.628e+15
             self.calendar_year = nanosecond / 3.154e+16
-            self.decade = nanosecond / 3.154e+16
-            self.century = nanosecond / 3.154e+17
+            self.decade = nanosecond / 3.154e+17
+            self.century = nanosecond / 3.154e+18
         elif not is_none(microsecond):
             self.nanosecond = microsecond * 1000
             self.microsecond = microsecond
@@ -26,7 +26,7 @@ class Time(Base):
             self.week = microsecond / 6.048e+11
             self.month = microsecond / 2.628e+12
             self.calendar_year = microsecond / 3.154e+13
-            self.decade = microsecond / 3.154e+13
+            self.decade = microsecond / 3.154e+14
             self.century = microsecond / 3.154e+15
         elif not is_none(millisecond):
             self.nanosecond = millisecond * 1e+6
@@ -37,9 +37,9 @@ class Time(Base):
             self.hour = millisecond / 3.6e+6
             self.day = millisecond / 8.64e+7
             self.week = millisecond / 6.048e+8
-            self.month = millisecond / 6.048e+8
+            self.month = millisecond / 2.628e+9
             self.calendar_year = millisecond / 3.154e+10
-            self.decade = millisecond / 3.154e+10
+            self.decade = millisecond / 3.154e+11
             self.century = millisecond / 3.154e+12
         elif not is_none(second):
             self.nanosecond = second * 1e+9
@@ -50,8 +50,8 @@ class Time(Base):
             self.hour = second / 3600
             self.day = second / 86400
             self.week = second / 604800
-            self.month = second / 604800
-            self.calendar_year = second / 2.628e+6
+            self.month = second / 2.628e+6
+            self.calendar_year = second / 3.154e+7
             self.decade = second / 3.154e+8
             self.century = second / 3.154e+9
         elif not is_none(minute):
@@ -63,8 +63,8 @@ class Time(Base):
             self.hour = minute / 60
             self.day = minute / 1440
             self.week = minute / 10080
-            self.month = minute / 10080
-            self.calendar_year = minute / 43800
+            self.month = minute / 43800
+            self.calendar_year = minute / 525600
             self.decade = minute / 5.256e+6
             self.century = minute / 5.256e+7
         elif not is_none(hour):
@@ -78,7 +78,7 @@ class Time(Base):
             self.week = hour / 168
             self.month = hour / 730
             self.calendar_year = hour / 8760
-            self.decade = hour / 8760
+            self.decade = hour / 87600
             self.century = hour / 876000
         elif not is_none(day):
             self.nanosecond = day * 8.64e+13
@@ -89,9 +89,9 @@ class Time(Base):
             self.hour = day * 24
             self.day = day
             self.week = day / 7
-            self.month = day / 7
+            self.month = day / 30.417
             self.calendar_year = day / 365
-            self.decade = day / 365
+            self.decade = day / 3650
             self.century = day / 36500
         elif not is_none(week):
             self.nanosecond = week * 6.048e+14
@@ -103,12 +103,12 @@ class Time(Base):
             self.day = week * 7
             self.week = week
             self.month = week / 4.345
-            self.calendar_year = week / 52.143
+            self.calendar_year = week / 4.345
             self.decade = week / 52.143
             self.century = week / 5214
         elif not is_none(month):
-            self.nanosecond = month * 2.628e+15
-            self.microsecond = month * 2.628e+12
+            self.nanosecond = month / 1200
+            self.microsecond = month * 2.628e+15
             self.millisecond = month * 2.628e+9
             self.second = month * 2.628e+6
             self.minute = month * 43800
@@ -141,8 +141,8 @@ class Time(Base):
             self.hour = decade * 87600
             self.day = decade * 3650
             self.week = decade * 521
-            self.month = decade * 521
-            self.calendar_year = decade * 120
+            self.month = decade * 120
+            self.calendar_year = decade * 10
             self.decade = decade
             self.century = decade / 10
         elif not is_none(century):
@@ -155,7 +155,7 @@ class Time(Base):
             self.day = century * 36500
             self.week = century * 5214
             self.month = century * 1200
-            self.calendar_year = century * 1200
+            self.calendar_year = century * 100
             self.decade = century * 10
             self.century = century
         else:

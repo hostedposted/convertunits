@@ -44,7 +44,7 @@ class Mass(Base):
             self.imperial_ton = milligram / 1.016e+9
             self.us_ton = milligram / 9.072e+8
             self.stone = milligram / 6.35e+6
-            self.pound = milligram / 6.35e+6
+            self.pound = milligram / 453592
             self.ounce = milligram / 28350
         elif not is_none(microgram):
             self.metric_ton = microgram / 1e+12
@@ -74,10 +74,10 @@ class Mass(Base):
             self.gram = us_ton * 907185
             self.milligram = us_ton * 9.072e+8
             self.microgram = us_ton * 9.072e+11
-            self.imperial_ton = us_ton * 9.072e+11
+            self.imperial_ton = us_ton / 1.12
             self.us_ton = us_ton
             self.stone = us_ton * 143
-            self.pound = us_ton * 143
+            self.pound = us_ton * 2000
             self.ounce = us_ton * 32000
         elif not is_none(stone):
             self.metric_ton = stone / 157
@@ -88,7 +88,7 @@ class Mass(Base):
             self.imperial_ton = stone / 160
             self.us_ton = stone / 143
             self.stone = stone
-            self.pound = stone / 143
+            self.pound = stone * 14
             self.ounce = stone * 224
         elif not is_none(pound):
             self.metric_ton = pound / 2205
@@ -104,7 +104,7 @@ class Mass(Base):
         elif not is_none(ounce):
             self.metric_ton = ounce / 35274
             self.kilogram = ounce / 35.274
-            self.gram = ounce / 35.274
+            self.gram = ounce * 28.35
             self.milligram = ounce * 28350
             self.microgram = ounce * 2.835e+7
             self.imperial_ton = ounce / 35840

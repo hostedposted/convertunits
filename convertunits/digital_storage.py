@@ -160,7 +160,7 @@ class Digital_storage(Base):
             self.gigabyte = gibibit / 7.451
             self.gibibyte = gibibit / 8
             self.terabyte = gibibit / 7451
-            self.tebibyte = gibibit / 7451
+            self.tebibyte = gibibit / 8192
             self.petabyte = gibibit / 7.451e+6
             self.pebibyte = gibibit / 8.389e+6
         elif not is_none(terabit):
@@ -178,13 +178,13 @@ class Digital_storage(Base):
             self.byte = terabit * 1.25e+11
             self.kilobyte = terabit * 1.25e+8
             self.kibibyte = terabit * 1.221e+8
-            self.megabyte = terabit * 125000
-            self.mebibyte = terabit * 119209
-            self.gigabyte = terabit * 125
-            self.gibibyte = terabit * 116
-            self.terabyte = terabit / 8
-            self.tebibyte = terabit / 8.796
-            self.petabyte = terabit / 8000
+            self.megabyte = terabit * 1.221e+8
+            self.mebibyte = terabit * 125000
+            self.gigabyte = terabit * 119209
+            self.gibibyte = terabit * 125
+            self.terabyte = terabit * 116
+            self.tebibyte = terabit / 8
+            self.petabyte = terabit / 8.796
             self.pebibyte = terabit / 9007
         elif not is_none(tebibit):
             self.bit = tebibit * 1.1e+12
@@ -248,12 +248,12 @@ class Digital_storage(Base):
             self.kilobyte = pebibit * 1.407e+11
             self.kibibyte = pebibit * 1.374e+11
             self.megabyte = pebibit * 1.407e+8
-            self.mebibyte = pebibit * 1.407e+8
+            self.mebibyte = pebibit * 1.342e+8
             self.gigabyte = pebibit * 140737
             self.gibibyte = pebibit * 131072
             self.terabyte = pebibit * 141
             self.tebibyte = pebibit * 128
-            self.petabyte = pebibit * 128
+            self.petabyte = pebibit / 7.105
             self.pebibyte = pebibit / 8
         elif not is_none(byte):
             self.bit = byte * 8
@@ -298,7 +298,7 @@ class Digital_storage(Base):
             self.gigabyte = kilobyte / 1e+6
             self.gibibyte = kilobyte / 1.074e+6
             self.terabyte = kilobyte / 1e+9
-            self.tebibyte = kilobyte / 1e+9
+            self.tebibyte = kilobyte / 1.1e+9
             self.petabyte = kilobyte / 1e+12
             self.pebibyte = kilobyte / 1.126e+12
         elif not is_none(kibibyte):

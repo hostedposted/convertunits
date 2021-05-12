@@ -14,18 +14,18 @@ from convertunits.time import Time
 from convertunits.volume import Volume
 
 __all__ = [
-    Area,
-    Data_transfer_rate,
-    Digital_storage,
-    Energy,
-    Frequency,
-    Fuel_economy,
-    Length,
-    Mass,
-    Plane_angle,
-    Pressure,
-    Speed,
-    Temperature,
-    Time,
-    Volume
+    "Area",
+    "Data_transfer_rate",
+    "Digital_storage",
+    "Energy",
+    "Frequency",
+    "Fuel_economy",
+    "Length",
+    "Mass",
+    "Plane_angle",
+    "Pressure",
+    "Speed",
+    "Temperature",
+    "Time",
+    "Volume"
 ]

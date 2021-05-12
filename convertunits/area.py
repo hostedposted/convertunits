@@ -9,8 +9,8 @@ class Area(Base):
             self.square_yard = square_kilometer * 1.196e+6
             self.square_foot = square_kilometer * 1.076e+7
             self.square_inch = square_kilometer * 1.55e+9
-            self.hectare = square_kilometer * 1.55e+9
-            self.acre = square_kilometer * 100
+            self.hectare = square_kilometer * 100
+            self.acre = square_kilometer * 247
         elif not is_none(square_meter):
             self.square_kilometer = square_meter / 1e+6
             self.square_meter = square_meter
@@ -26,11 +26,11 @@ class Area(Base):
             self.square_mile = square_mile
             self.square_yard = square_mile * 3.098e+6
             self.square_foot = square_mile * 2.788e+7
-            self.square_inch = square_mile * 2.788e+7
-            self.hectare = square_mile * 4.014e+9
+            self.square_inch = square_mile * 4.014e+9
+            self.hectare = square_mile * 259
             self.acre = square_mile * 640
         elif not is_none(square_yard):
-            self.square_kilometer = square_yard / 1.196e+6
+            self.square_kilometer = square_yard / 4840
             self.square_meter = square_yard / 1.196
             self.square_mile = square_yard / 3.098e+6
             self.square_yard = square_yard

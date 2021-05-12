@@ -6,11 +6,11 @@ class Frequency(Base):
             self.hertz = hertz
             self.kilohertz = hertz / 1000
             self.megahertz = hertz / 1e+6
-            self.gigahertz = hertz / 1e+6
+            self.gigahertz = hertz / 1e+9
         elif not is_none(kilohertz):
-            self.hertz = kilohertz * 1000
+            self.hertz = kilohertz / 1e+6
             self.kilohertz = kilohertz
-            self.megahertz = kilohertz / 1000
+            self.megahertz = kilohertz * 1000
             self.gigahertz = kilohertz / 1e+6
         elif not is_none(megahertz):
             self.hertz = megahertz * 1e+6

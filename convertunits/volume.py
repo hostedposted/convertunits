@@ -18,10 +18,10 @@ class Volume(Base):
             self.imperial_pint = us_liquid_gallon * 6.661
             self.imperial_cup = us_liquid_gallon * 13.323
             self.imperial_fluid_ounce = us_liquid_gallon * 133
-            self.imperial_tablespoon = us_liquid_gallon * 133
+            self.imperial_tablespoon = us_liquid_gallon * 213
             self.imperial_teaspoon = us_liquid_gallon * 639
-            self.cubic_foot = us_liquid_gallon * 639
-            self.cubic_inch = us_liquid_gallon / 7.481
+            self.cubic_foot = us_liquid_gallon / 7.481
+            self.cubic_inch = us_liquid_gallon * 231
         elif not is_none(us_liquid_quart):
             self.us_liquid_gallon = us_liquid_quart / 4
             self.us_liquid_quart = us_liquid_quart
@@ -39,8 +39,8 @@ class Volume(Base):
             self.imperial_cup = us_liquid_quart * 3.331
             self.imperial_fluid_ounce = us_liquid_quart * 33.307
             self.imperial_tablespoon = us_liquid_quart * 53.291
-            self.imperial_teaspoon = us_liquid_quart * 53.291
-            self.cubic_foot = us_liquid_quart * 160
+            self.imperial_teaspoon = us_liquid_quart * 160
+            self.cubic_foot = us_liquid_quart / 29.922
             self.cubic_inch = us_liquid_quart * 57.75
         elif not is_none(us_liquid_pint):
             self.us_liquid_gallon = us_liquid_pint / 8
@@ -57,10 +57,10 @@ class Volume(Base):
             self.imperial_quart = us_liquid_pint / 2.402
             self.imperial_pint = us_liquid_pint / 1.201
             self.imperial_cup = us_liquid_pint * 1.665
-            self.imperial_fluid_ounce = us_liquid_pint * 1.665
+            self.imperial_fluid_ounce = us_liquid_pint * 16.653
             self.imperial_tablespoon = us_liquid_pint * 26.646
-            self.imperial_teaspoon = us_liquid_pint * 26.646
-            self.cubic_foot = us_liquid_pint * 79.937
+            self.imperial_teaspoon = us_liquid_pint * 79.937
+            self.cubic_foot = us_liquid_pint / 59.844
             self.cubic_inch = us_liquid_pint * 28.875
         elif not is_none(us_legal_cup):
             self.us_liquid_gallon = us_legal_cup / 15.773
@@ -79,7 +79,7 @@ class Volume(Base):
             self.imperial_cup = us_legal_cup / 1.184
             self.imperial_fluid_ounce = us_legal_cup * 8.447
             self.imperial_tablespoon = us_legal_cup * 13.515
-            self.imperial_teaspoon = us_legal_cup * 13.515
+            self.imperial_teaspoon = us_legal_cup * 40.545
             self.cubic_foot = us_legal_cup / 118
             self.cubic_inch = us_legal_cup * 14.646
         elif not is_none(us_fluid_ounce):
@@ -120,7 +120,7 @@ class Volume(Base):
             self.imperial_fluid_ounce = us_tablespoon / 1.922
             self.imperial_tablespoon = us_tablespoon / 1.201
             self.imperial_teaspoon = us_tablespoon * 2.498
-            self.cubic_foot = us_tablespoon * 2.498
+            self.cubic_foot = us_tablespoon / 1915
             self.cubic_inch = us_tablespoon / 1.108
         elif not is_none(us_teaspoon):
             self.us_liquid_gallon = us_teaspoon / 768
@@ -139,8 +139,8 @@ class Volume(Base):
             self.imperial_cup = us_teaspoon / 57.646
             self.imperial_fluid_ounce = us_teaspoon / 5.765
             self.imperial_tablespoon = us_teaspoon / 3.603
-            self.imperial_teaspoon = us_teaspoon / 3.603
-            self.cubic_foot = us_teaspoon / 1.201
+            self.imperial_teaspoon = us_teaspoon / 1.201
+            self.cubic_foot = us_teaspoon / 5745
             self.cubic_inch = us_teaspoon / 3.325
         elif not is_none(cubic_meter):
             self.us_liquid_gallon = cubic_meter * 264
@@ -159,7 +159,7 @@ class Volume(Base):
             self.imperial_cup = cubic_meter * 3520
             self.imperial_fluid_ounce = cubic_meter * 35195
             self.imperial_tablespoon = cubic_meter * 56312
-            self.imperial_teaspoon = cubic_meter * 56312
+            self.imperial_teaspoon = cubic_meter * 168936
             self.cubic_foot = cubic_meter * 35.315
             self.cubic_inch = cubic_meter * 61024
         elif not is_none(liter):
@@ -179,8 +179,8 @@ class Volume(Base):
             self.imperial_cup = liter * 3.52
             self.imperial_fluid_ounce = liter * 35.195
             self.imperial_tablespoon = liter * 56.312
-            self.imperial_teaspoon = liter * 56.312
-            self.cubic_foot = liter * 169
+            self.imperial_teaspoon = liter * 169
+            self.cubic_foot = liter / 28.317
             self.cubic_inch = liter * 61.024
         elif not is_none(milliliter):
             self.us_liquid_gallon = milliliter / 3785
@@ -200,7 +200,7 @@ class Volume(Base):
             self.imperial_fluid_ounce = milliliter / 28.413
             self.imperial_tablespoon = milliliter / 17.758
             self.imperial_teaspoon = milliliter / 5.919
-            self.cubic_foot = milliliter / 5.919
+            self.cubic_foot = milliliter / 28317
             self.cubic_inch = milliliter / 16.387
         elif not is_none(imperial_gallon):
             self.us_liquid_gallon = imperial_gallon * 1.201
@@ -239,11 +239,11 @@ class Volume(Base):
             self.imperial_cup = imperial_quart * 4
             self.imperial_fluid_ounce = imperial_quart * 40
             self.imperial_tablespoon = imperial_quart * 64
-            self.imperial_teaspoon = imperial_quart * 64
-            self.cubic_foot = imperial_quart * 192
+            self.imperial_teaspoon = imperial_quart * 192
+            self.cubic_foot = imperial_quart / 24.915
             self.cubic_inch = imperial_quart * 69.355
         elif not is_none(imperial_pint):
-            self.us_liquid_gallon = imperial_pint * 34.677
+            self.us_liquid_gallon = imperial_pint / 6.661
             self.us_liquid_quart = imperial_pint / 1.665
             self.us_liquid_pint = imperial_pint * 1.201
             self.us_legal_cup = imperial_pint * 2.368
@@ -260,7 +260,7 @@ class Volume(Base):
             self.imperial_fluid_ounce = imperial_pint * 20
             self.imperial_tablespoon = imperial_pint * 32
             self.imperial_teaspoon = imperial_pint * 96
-            self.cubic_foot = imperial_pint * 96
+            self.cubic_foot = imperial_pint / 49.831
             self.cubic_inch = imperial_pint * 34.677
         elif not is_none(imperial_cup):
             self.us_liquid_gallon = imperial_cup / 13.323
@@ -278,9 +278,9 @@ class Volume(Base):
             self.imperial_pint = imperial_cup / 2
             self.imperial_cup = imperial_cup
             self.imperial_fluid_ounce = imperial_cup * 10
-            self.imperial_tablespoon = imperial_cup * 10
-            self.imperial_teaspoon = imperial_cup * 16
-            self.cubic_foot = imperial_cup * 48
+            self.imperial_tablespoon = imperial_cup * 16
+            self.imperial_teaspoon = imperial_cup * 48
+            self.cubic_foot = imperial_cup / 99.661
             self.cubic_inch = imperial_cup * 17.339
         elif not is_none(imperial_fluid_ounce):
             self.us_liquid_gallon = imperial_fluid_ounce / 133
@@ -300,7 +300,7 @@ class Volume(Base):
             self.imperial_fluid_ounce = imperial_fluid_ounce
             self.imperial_tablespoon = imperial_fluid_ounce * 1.6
             self.imperial_teaspoon = imperial_fluid_ounce * 4.8
-            self.cubic_foot = imperial_fluid_ounce * 4.8
+            self.cubic_foot = imperial_fluid_ounce / 997
             self.cubic_inch = imperial_fluid_ounce * 1.734
         elif not is_none(imperial_tablespoon):
             self.us_liquid_gallon = imperial_tablespoon / 213
@@ -312,19 +312,19 @@ class Volume(Base):
             self.us_teaspoon = imperial_tablespoon * 3.603
             self.cubic_meter = imperial_tablespoon / 56312
             self.liter = imperial_tablespoon / 56.312
-            self.milliliter = imperial_tablespoon / 56.312
+            self.milliliter = imperial_tablespoon * 17.758
             self.imperial_gallon = imperial_tablespoon / 256
             self.imperial_quart = imperial_tablespoon / 64
             self.imperial_pint = imperial_tablespoon / 32
             self.imperial_cup = imperial_tablespoon / 16
             self.imperial_fluid_ounce = imperial_tablespoon / 1.6
             self.imperial_tablespoon = imperial_tablespoon
-            self.imperial_teaspoon = imperial_tablespoon / 1.6
+            self.imperial_teaspoon = imperial_tablespoon * 3
             self.cubic_foot = imperial_tablespoon / 1595
             self.cubic_inch = imperial_tablespoon * 1.084
         elif not is_none(imperial_teaspoon):
             self.us_liquid_gallon = imperial_teaspoon / 639
-            self.us_liquid_quart = imperial_teaspoon / 639
+            self.us_liquid_quart = imperial_teaspoon / 160
             self.us_liquid_pint = imperial_teaspoon / 79.937
             self.us_legal_cup = imperial_teaspoon / 40.545
             self.us_fluid_ounce = imperial_teaspoon / 4.996
@@ -340,7 +340,7 @@ class Volume(Base):
             self.imperial_fluid_ounce = imperial_teaspoon / 4.8
             self.imperial_tablespoon = imperial_teaspoon / 3
             self.imperial_teaspoon = imperial_teaspoon
-            self.cubic_foot = imperial_teaspoon / 3
+            self.cubic_foot = imperial_teaspoon / 4784
             self.cubic_inch = imperial_teaspoon / 2.768
         elif not is_none(cubic_foot):
             self.us_liquid_gallon = cubic_foot * 7.481
@@ -359,7 +359,7 @@ class Volume(Base):
             self.imperial_cup = cubic_foot * 99.661
             self.imperial_fluid_ounce = cubic_foot * 997
             self.imperial_tablespoon = cubic_foot * 1595
-            self.imperial_teaspoon = cubic_foot * 1595
+            self.imperial_teaspoon = cubic_foot * 4784
             self.cubic_foot = cubic_foot
             self.cubic_inch = cubic_foot * 1728
         elif not is_none(cubic_inch):

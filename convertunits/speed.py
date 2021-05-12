@@ -11,12 +11,12 @@ class Speed(Base):
         elif not is_none(foot_per_second):
             self.miles_per_hour = foot_per_second / 1.467
             self.foot_per_second = foot_per_second
-            self.meter_per_second = foot_per_second / 1.467
-            self.kilometer_per_hour = foot_per_second / 3.281
+            self.meter_per_second = foot_per_second / 3.281
+            self.kilometer_per_hour = foot_per_second * 1.097
             self.knot = foot_per_second / 1.688
         elif not is_none(meter_per_second):
-            self.miles_per_hour = meter_per_second * 2.237
-            self.foot_per_second = meter_per_second * 3.281
+            self.miles_per_hour = meter_per_second * 1.944
+            self.foot_per_second = meter_per_second * 2.237
             self.meter_per_second = meter_per_second
             self.kilometer_per_hour = meter_per_second * 3.281
             self.knot = meter_per_second * 1.944
@@ -28,8 +28,8 @@ class Speed(Base):
             self.knot = kilometer_per_hour / 1.852
         elif not is_none(knot):
             self.miles_per_hour = knot * 1.151
-            self.foot_per_second = knot * 1.151
-            self.meter_per_second = knot * 1.688
+            self.foot_per_second = knot * 1.688
+            self.meter_per_second = knot / 1.944
             self.kilometer_per_hour = knot * 1.852
             self.knot = knot
         else:
