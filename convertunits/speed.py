@@ -15,10 +15,10 @@ class Speed(Base):
             self.kilometer_per_hour = foot_per_second * 1.097
             self.knot = foot_per_second / 1.688
         elif not is_none(meter_per_second):
-            self.miles_per_hour = meter_per_second * 1.944
-            self.foot_per_second = meter_per_second * 2.237
+            self.miles_per_hour = meter_per_second * 2.237
+            self.foot_per_second = meter_per_second * 3.281
             self.meter_per_second = meter_per_second
-            self.kilometer_per_hour = meter_per_second * 3.281
+            self.kilometer_per_hour = meter_per_second * 3.6
             self.knot = meter_per_second * 1.944
         elif not is_none(kilometer_per_hour):
             self.miles_per_hour = kilometer_per_hour / 1.609

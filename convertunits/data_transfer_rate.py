@@ -101,7 +101,7 @@ class Data_transfer_rate(Base):
             self.terabyte_per_second = mebibit_per_second / 7.629e+6
             self.tebibit_per_second = mebibit_per_second / 1.049e+6
         elif not is_none(gigabit_per_second):
-            self.bit_per_second = gigabit_per_second / 1100
+            self.bit_per_second = gigabit_per_second * 1e+9
             self.kilobit_per_second = gigabit_per_second * 1e+6
             self.kilobyte_per_second = gigabit_per_second * 125000
             self.kibibit_per_second = gigabit_per_second * 976563

@@ -15,10 +15,10 @@ class Pressure(Base):
             self.standard_atmosphere = pascal / 101325
             self.torr = pascal / 133
         elif not is_none(pound_force_per_square_inch):
-            self.bar = pound_force_per_square_inch * 51.715
-            self.pascal = pound_force_per_square_inch / 14.504
+            self.bar = pound_force_per_square_inch / 14.504
+            self.pascal = pound_force_per_square_inch * 6895
             self.pound_force_per_square_inch = pound_force_per_square_inch
-            self.standard_atmosphere = pound_force_per_square_inch * 6895
+            self.standard_atmosphere = pound_force_per_square_inch / 14.696
             self.torr = pound_force_per_square_inch * 51.715
         elif not is_none(standard_atmosphere):
             self.bar = standard_atmosphere * 1.013

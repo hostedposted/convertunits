@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="convertunits",
-    version="1.0.2",
+    version="1.0.3",
     author="Hostedposted",
     author_email="hostedpostedsite@gmail.com",
     description="Convert units in python.",

@@ -178,13 +178,13 @@ class Digital_storage(Base):
             self.byte = terabit * 1.25e+11
             self.kilobyte = terabit * 1.25e+8
             self.kibibyte = terabit * 1.221e+8
-            self.megabyte = terabit * 1.221e+8
-            self.mebibyte = terabit * 125000
-            self.gigabyte = terabit * 119209
-            self.gibibyte = terabit * 125
-            self.terabyte = terabit * 116
-            self.tebibyte = terabit / 8
-            self.petabyte = terabit / 8.796
+            self.megabyte = terabit * 125000
+            self.mebibyte = terabit * 119209
+            self.gigabyte = terabit * 125
+            self.gibibyte = terabit * 116
+            self.terabyte = terabit / 8
+            self.tebibyte = terabit / 8.796
+            self.petabyte = terabit / 8000
             self.pebibyte = terabit / 9007
         elif not is_none(tebibit):
             self.bit = tebibit * 1.1e+12

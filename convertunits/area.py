@@ -30,7 +30,7 @@ class Area(Base):
             self.hectare = square_mile * 259
             self.acre = square_mile * 640
         elif not is_none(square_yard):
-            self.square_kilometer = square_yard / 4840
+            self.square_kilometer = square_yard / 1.196e+6
             self.square_meter = square_yard / 1.196
             self.square_mile = square_yard / 3.098e+6
             self.square_yard = square_yard

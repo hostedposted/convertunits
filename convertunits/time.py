@@ -103,12 +103,12 @@ class Time(Base):
             self.day = week * 7
             self.week = week
             self.month = week / 4.345
-            self.calendar_year = week / 4.345
-            self.decade = week / 52.143
+            self.calendar_year = week / 52.143
+            self.decade = week / 521
             self.century = week / 5214
         elif not is_none(month):
-            self.nanosecond = month / 1200
-            self.microsecond = month * 2.628e+15
+            self.nanosecond = month * 2.628e+15
+            self.microsecond = month * 2.628e+12
             self.millisecond = month * 2.628e+9
             self.second = month * 2.628e+6
             self.minute = month * 43800
