@@ -1,0 +1,5 @@
+bar = "pascal / 133"
+pascal = "pascal"
+pound_force_per_square_inch = "pascal / 6895"
+standard_atmosphere = "pascal / 101325"
+torr = "pascal / 133"

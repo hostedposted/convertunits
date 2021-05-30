@@ -1,0 +1,8 @@
+square_kilometer = "acre / 247"
+square_meter = "acre * 4047"
+square_mile = "acre / 640"
+square_yard = "acre * 4840"
+square_foot = "acre * 43560"
+square_inch = "acre * 6.273e+6"
+hectare = "acre / 2.471"
+acre = "acre"

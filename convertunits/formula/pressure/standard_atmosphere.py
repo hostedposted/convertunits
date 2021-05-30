@@ -1,0 +1,5 @@
+bar = "standard_atmosphere * 1.013"
+pascal = "standard_atmosphere * 101325"
+pound_force_per_square_inch = "standard_atmosphere * 14.696"
+standard_atmosphere = "standard_atmosphere"
+torr = "standard_atmosphere * 760"

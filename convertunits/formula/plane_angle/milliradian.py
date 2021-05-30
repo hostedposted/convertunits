@@ -1,0 +1,6 @@
+degree = "milliradian * (3600 * 180)/1000*pi"
+gradian = "milliradian * 200/1000*pi"
+milliradian = "milliradian"
+minute_of_arc = "milliradian * (60 * 180)/1000*pi"
+radian = "milliradian / 1000"
+second_of_arc = "milliradian * (3600 * 180)/1000*pi"

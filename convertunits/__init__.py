@@ -12,6 +12,7 @@ from convertunits.speed import Speed
 from convertunits.temperature import Temperature
 from convertunits.time import Time
 from convertunits.volume import Volume
+import convertunits.formula as formula
 
 __all__ = [
     "Area",
@@ -27,5 +28,6 @@ __all__ = [
     "Speed",
     "Temperature",
     "Time",
-    "Volume"
+    "Volume",
+    "formula"
 ]

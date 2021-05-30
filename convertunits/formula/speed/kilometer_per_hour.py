@@ -1,0 +1,5 @@
+miles_per_hour = "kilometer_per_hour / 1.609"
+foot_per_second = "kilometer_per_hour / 1.097"
+meter_per_second = "kilometer_per_hour / 3.6"
+kilometer_per_hour = "kilometer_per_hour"
+knot = "kilometer_per_hour / 1.852"

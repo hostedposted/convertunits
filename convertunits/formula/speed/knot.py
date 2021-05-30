@@ -1,0 +1,5 @@
+miles_per_hour = "knot * 1.151"
+foot_per_second = "knot * 1.688"
+meter_per_second = "knot / 1.944"
+kilometer_per_hour = "knot * 1.852"
+knot = "knot"

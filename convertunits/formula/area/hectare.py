@@ -1,0 +1,8 @@
+square_kilometer = "hectare / 100"
+square_meter = "hectare * 10000"
+square_mile = "hectare / 259"
+square_yard = "hectare * 11960"
+square_foot = "hectare * 107639"
+square_inch = "hectare * 1.55e+7"
+hectare = "hectare"
+acre = "hectare * 2.471"
